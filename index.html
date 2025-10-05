@@ -8,34 +8,21 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
+      background-color: #000;
+      color: #fff;
     }
     header {
-      background-color: #0078ff;
-      color: white;
-      padding: 20px;
+      background-color: #111;
+      color: #fff;
+      padding: 25px;
       text-align: center;
       font-size: 1.8em;
       font-weight: bold;
-    }
-    nav {
-      background-color: #0056b3;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 10px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
     .hero {
-      background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') no-repeat center/cover;
+      background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
       color: white;
       text-align: center;
       padding: 100px 20px;
@@ -43,64 +30,72 @@
     .hero h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.8);
     }
     .hero p {
       font-size: 1.2em;
+      color: #e0e0e0;
     }
     .section {
-      padding: 50px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
+      gap: 25px;
+      margin-top: 40px;
     }
     .card {
-      background: white;
+      background: #111;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(255,255,255,0.1);
       padding: 20px;
-      transition: transform 0.2s;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
     .card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(255,255,255,0.15);
     }
     .card img {
       width: 100%;
       border-radius: 10px;
     }
     .button {
-      background-color: #0078ff;
-      color: white;
-      border: none;
+      background-color: #222;
+      color: #fff;
+      border: 1px solid #444;
       padding: 10px 20px;
       border-radius: 8px;
       cursor: pointer;
       font-weight: bold;
+      transition: all 0.2s;
     }
     .button:hover {
-      background-color: #0056b3;
+      background-color: #333;
+      border-color: #666;
     }
     footer {
-      background-color: #222;
-      color: white;
+      background-color: #111;
+      color: #aaa;
       text-align: center;
-      padding: 15px;
-      margin-top: 40px;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 0.9em;
+    }
+    a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <header>🌐 PlantillasWeb</header>
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#plantillas">Plantillas</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+  <header>PlantillasWeb</header>
 
-  <section class="hero" id="inicio">
+  <section class="hero">
     <h1>Diseños web listos para vender</h1>
     <p>Plantillas modernas, rápidas y adaptadas a cualquier negocio.</p>
     <button class="button" onclick="window.location='#plantillas'">Ver plantillas</button>
@@ -111,19 +106,19 @@
     <p>Personalizables, adaptables y profesionales.</p>
     <div class="cards">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1502882705129-91675add9d26" alt="Negocios">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" alt="Negocios">
         <h3>Negocios</h3>
         <p>Ideal para empresas y emprendedores.</p>
         <button class="button">Ver demo</button>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334" alt="Tienda">
+        <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=800&q=80" alt="Tienda">
         <h3>Tienda Online</h3>
         <p>Perfecta para mostrar y vender productos.</p>
         <button class="button">Ver demo</button>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1522205408450-add114ad53fe" alt="Portafolio">
+        <img src="https://images.unsplash.com/photo-1522205408450-add114ad53fe?auto=format&fit=crop&w=800&q=80" alt="Portafolio">
         <h3>Portafolio</h3>
         <p>Excelente para diseñadores y freelancers.</p>
         <button class="button">Ver demo</button>
@@ -132,12 +127,15 @@
   </section>
 
   <section class="section" id="contacto">
-    <h2>📩 Contáctanos</h2>
-    <p>¿Quieres una plantilla personalizada? Escríbenos:</p>
-    <button class="button" onclick="window.open('https://wa.me/519XXXXXXXX', '_blank')">Contactar por WhatsApp</button>
+    <h2>📩 Contáctame</h2>
+    <p>¿Quieres una plantilla personalizada o asesoría para tu negocio?</p>
+    <p><strong>👤 Giancarlo Sanchez</strong></p>
+    <p>📧 <a href="mailto:Jeanruiz552@gmail.com">Jeanruiz552@gmail.com</a></p>
+    <button class="button" onclick="window.open('https://wa.me/51931260132', '_blank')">
+      Contactar por WhatsApp
+    </button>
   </section>
 
-  <footer>© 2025 PlantillasWeb - Todos los derechos reservados</footer>
+  <footer>© 2025 PlantillasWeb - Desarrollado por Giancarlo Sanchez</footer>
 </body>
 </html>
-
