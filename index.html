@@ -6,57 +6,78 @@
   <title>Plantillas Web | Giancarlo Sanchez</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Poppins', sans-serif;
       background-color: #000;
       color: #fff;
     }
+
     header {
+      position: relative;
       text-align: center;
-      padding: 60px 20px;
-      background: #fff;
-      color: #000;
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      color: #000; /* 👈 Texto negro */
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 10px 20px;
+      border-radius: 10px;
     }
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 20px;
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      color: #000; /* 👈 Texto negro */
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 8px 15px;
+      border-radius: 8px;
     }
+
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
-      padding: 50px;
+      padding: 60px;
     }
+
     .card {
       background: #111;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 0 10px rgba(255,255,255,0.1);
       text-align: center;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
       transition: transform 0.3s ease;
     }
+
     .card:hover {
       transform: translateY(-5px);
     }
+
     .card img {
       width: 100%;
       height: 180px;
       object-fit: cover;
     }
+
     .card h3 {
       margin: 15px 0 5px 0;
       color: #fff;
     }
+
     .card p {
       color: #ccc;
       font-size: 0.95rem;
       padding: 0 10px 10px 10px;
     }
+
     .button {
       display: inline-block;
       background: #fff;
@@ -68,9 +89,11 @@
       font-weight: bold;
       transition: background 0.3s;
     }
+
     .button:hover {
       background: #ddd;
     }
+
     footer {
       background: #111;
       text-align: center;
@@ -78,6 +101,7 @@
       color: #999;
       font-size: 0.9rem;
     }
+
     a {
       color: #fff;
       text-decoration: underline;
@@ -113,7 +137,9 @@
   </section>
 
   <footer>
-    <p>© 2025 Giancarlo Sanchez | Contacto: <a href="mailto:Jeanruiz552@gmail.com">ruizjean552@gmail.com</a> | WhatsApp: <a href="https://wa.me/51931260132" target="_blank">+51 931 260 132</a></p>
+    <p>© 2025 Giancarlo Sanchez <br>
+    ✉️ Correo: <a href="mailto:ruizjean552@gmail.com">ruizjean552@gmail.com</a> |
+    📲 WhatsApp: <a href="https://wa.me/51931260132" target="_blank">+51 931 260 132</a></p>
   </footer>
 
 </body>
